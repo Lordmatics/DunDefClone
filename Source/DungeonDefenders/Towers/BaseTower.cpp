@@ -4,6 +4,7 @@
 #include "Components/SceneComponent.h"
 #include "Components/StaticMeshComponent.h"
 #include "Components/SkeletalMeshComponent.h"
+#include "DungeonDefenders/Data/TowerDataAsset.h"
 
 // Sets default values
 ABaseTower::ABaseTower()
@@ -25,8 +26,6 @@ ABaseTower::ABaseTower()
 	m_animatedMesh->SetRelativeRotation(FRotator(0.0f));
 	m_animatedMesh->SetRelativeScale3D(FVector(1.0f));
 	m_animatedMesh->SetupAttachment(m_root);
-
-	m_towerData = TowerData(15.0f, 10.0f, 1.0f, 100.0f);
 }
 
 // Called when the game starts or when spawned
